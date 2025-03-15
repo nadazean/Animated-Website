@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated-website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">services</a>
+            <a href="#">login</a>
+            <div class="menu-icon">
+                <i class="fa fa-bars" aria-hidden="true" id="open-menu"></i>
+                <i class="fa fa-times hidden" id="close-menu"></i>
+            </div>
+            <div class="dropdown">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">services</a>
+            <a href="#">login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="text-box">
+            <h1>Create a <span>Website</span></h1>
+            <h1> From Idea to Reality </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fugiat debitis eum labore necessitatibus quidem repellendus voluptatum reiciendis error vitae.</p>
+            <button class="btn" type="button">Contact Us</button>
+        </div>
+        <img src="Designer_girl-bro-removebg-preview.png" alt="" class="img">
+
+    </section>
+
+
+
+   <script>
+ // إظهار وإخفاء القائمة عند النقر على أيقونة القائمة
+document.getElementById('open-menu').addEventListener('click', function() {
+    document.querySelector('nav').classList.add('open-menu'); // إظهار القائمة المنسدلة
+    document.getElementById('open-menu').classList.add('hidden'); // إخفاء أيقونة القائمة
+    document.getElementById('close-menu').classList.remove('hidden'); // إظهار أيقونة الإغلاق
+});
+
+// إخفاء القائمة عند النقر على أيقونة الإغلاق
+document.getElementById('close-menu').addEventListener('click', function() {
+    document.querySelector('nav').classList.remove('open-menu'); // إخفاء القائمة المنسدلة
+    document.getElementById('open-menu').classList.remove('hidden'); // إظهار أيقونة القائمة
+    document.getElementById('close-menu').classList.add('hidden'); // إخفاء أيقونة الإغلاق
+});
+
+   </script>
+    
+</body>
+</html>
